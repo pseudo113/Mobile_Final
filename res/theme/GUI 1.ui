@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="GUI 1" cloudDestinationProperty="login" uiid="Form" focusable="false" layout="FlowLayout" flowLayoutFillRows="false" flowLayoutAlign="4" flowLayoutValign="4" >
+  <component type="Container" name="Container" cloudDestinationProperty="Container" layout="BoxLayout" boxLayoutAxis="Y" >
+    <component type="ImageViewer" name="ImageViewer" cloudDestinationProperty="ImageViewer" focusable="true" scrollVisible="false" snapToGrid="false" >
+      <custom name="eagerLock" type="java.lang.Boolean" value="false" />
+      <custom name="image" type="com.codename1.ui.Image" value="logo-back.png" />
+    </component>
+    <component type="Label" name="logo" cloudDestinationProperty="Label" rtl="false" scrollVisible="true" text="   " gap="100" verticalAlignment="4" textPosition="0" >
+    </component>
+    <component type="Label" name="logo1" cloudDestinationProperty="Label" rtl="false" scrollVisible="true" text="   " gap="100" verticalAlignment="4" textPosition="0" >
+    </component>
+    <component type="TextField" name="username" cloudBoundProperty="text" cloudDestinationProperty="TextField" verticalAlignment="4" text="" hint="Username" >
+    </component>
+    <component type="TextField" name="password" cloudBoundProperty="text" cloudDestinationProperty="TextField1" text="" constraint="65536" hint="Password" >
+    </component>
+    <component type="Button" name="login" cloudDestinationProperty="Login" text="Login" >
+    </component>
+  </component>
+</component>

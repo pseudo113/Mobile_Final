@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="evenementListe" cloudDestinationProperty="evenementListe" layout="BoxLayout" boxLayoutAxis="Y" >
+  <component type="Container" name="ContainerGlobal" cloudDestinationProperty="Container" layout="BoxLayout" boxLayoutAxis="X" >
+    <component type="Label" name="image_user" cloudDestinationProperty="image_user" text="" icon="round.png" >
+    </component>
+    <component type="Container" name="Container1" cloudDestinationProperty="Container1" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="Label" name="Label" cloudDestinationProperty="Label" text="      " textPosition="1" >
+      </component>
+      <component type="Label" name="title" cloudDestinationProperty="Label" rtl="false" text="titre" verticalAlignment="4" textPosition="3" >
+      </component>
+      <component type="Label" name="nom_organizateur" cloudDestinationProperty="nom_organizateur" text="nom_organizateur" >
+      </component>
+    </component>
+  </component>
+  <component type="Container" name="Container2" cloudDestinationProperty="Container2" layout="BoxLayout" boxLayoutAxis="Y" >
+  </component>
+  <component type="Container" name="Container3" cloudDestinationProperty="Container3" >
+  </component>
+</component>

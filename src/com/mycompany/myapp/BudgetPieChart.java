@@ -61,7 +61,7 @@ public class BudgetPieChart extends AbstractDemoChart {
    protected CategorySeries buildCategoryDataset1(String title) {
     ConnectionRequest con = new ConnectionRequest();
     CategorySeries series = new CategorySeries(title);
-        con.setUrl("http://localhost:8080/EspritAide/web/app_dev.php/stat");   
+        con.setUrl("http://localhost/EspritAide/web/app_dev.php/stat");   
        con.addResponseListener(new ActionListener<NetworkEvent>() {
         @Override
         public void actionPerformed(NetworkEvent evt) {
@@ -110,7 +110,7 @@ public class BudgetPieChart extends AbstractDemoChart {
    */
   public Form execute() {
     double[] values = new double[] { 14, 11, 10, 19 };
-    int[] colors = new int[] { ColorUtil.BLUE, ColorUtil.GRAY, ColorUtil.MAGENTA, ColorUtil.YELLOW, ColorUtil.CYAN };
+    int[] colors = new int[] { ColorUtil.WHITE, ColorUtil.GRAY, ColorUtil.MAGENTA, ColorUtil.YELLOW, ColorUtil.CYAN,ColorUtil.MAGENTA,ColorUtil.CYAN,ColorUtil.WHITE,ColorUtil.LTGRAY,ColorUtil.BLACK };
     final DefaultRenderer renderer = buildCategoryRenderer(colors);
     renderer.setZoomButtonsVisible(true);
     renderer.setZoomEnabled(true);
@@ -200,8 +200,8 @@ public ArrayList<Entity.Stat> getListstat(String json) {
                 
              // double a = (double)double.valueOf((int) (double) obj.get("id"));
                
-           e.setCount(Double.parseDouble(obj.get("COUNT(user.id)").toString())  );
-                
+           e.setCount(Double.parseDouble(obj.get("COUNT(user.id)").toString()));
+       
                 
                 liststat.add(e);
 

@@ -62,7 +62,8 @@ public class Login {
         login.addActionListener((ActionListener) new ActionListener() {
          @Override
          public void actionPerformed(ActionEvent evt) {
-         con.setUrl("http://localhost/EspritAide/web/app_dev.php/user/"+ username.getText());
+         con.setUrl("http://localhost/EspritAide/web/app_dev.php/user/"+ username.getText()+"?p="+password.getText());
+             System.out.println(con.getUrl());
 
              con.addResponseListener(new ActionListener<NetworkEvent>() {
                  @Override
@@ -83,7 +84,7 @@ public class Login {
                        
                          a = getUser(new String(con.getResponseData()));
                          System.out.println(a);
-                         if (username.getText().equals(a.getUsername()) && password.getText().equals(a.getPassword())) {
+                         if (username.getText().equals(a.getUsername()) ) {
                              
                              CoursList ac = new CoursList(theme,a.getId());
                              ac.getF().show();

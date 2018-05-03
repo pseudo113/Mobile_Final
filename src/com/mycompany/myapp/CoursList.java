@@ -34,6 +34,7 @@ import java.util.Map;
 import com.codename1.ui.Form;
 import java.util.Arrays;
 
+
 /**
  *
  * @author mzark
@@ -142,7 +143,62 @@ f.getToolbar().addCommandToRightBar("", searchIcon, (e) -> {
         NetworkManager.getInstance().addToQueue(con);
 
         
-        f.getToolbar().addCommandToSideMenu("Statistiques", null, new ActionListener() {
+      f.getToolbar().addCommandToSideMenu("", null, new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                CoursList a = new CoursList(theme, id);
+                 a.getF().show();
+                 
+            }
+        });
+      
+       f.getToolbar().addCommandToSideMenu("", null, new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                CoursList a = new CoursList(theme, id);
+                 a.getF().show();
+                 
+            }
+        });
+       
+       
+         
+           
+           
+           
+        f.getToolbar().addCommandToSideMenu("       Page d'acceuil", null, new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                CoursList a = new CoursList(theme, id);
+                 a.getF().show();
+                 
+            }
+        });
+        
+         f.getToolbar().addCommandToSideMenu("----------------------------------------", null, new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                CoursList a = new CoursList(theme, id);
+                 a.getF().show();
+                 
+            }
+        });
+        
+         f.getToolbar().addCommandToSideMenu("   Mes cours", null, new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                CoursList a = new CoursList(theme, id);
+                 a.getF().show();
+                 
+            }
+        });
+         
+            f.getToolbar().addCommandToSideMenu("   Statistiques des Cours", null, new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent evt) {
@@ -151,13 +207,16 @@ f.getToolbar().addCommandToRightBar("", searchIcon, (e) -> {
                  
             }
         });
-         f.getToolbar().addCommandToSideMenu("Mes cours", null, new ActionListener() {
+         
+         
+     
+               
+                  f.getToolbar().addCommandToSideMenu("   Logout", null, new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent evt) {
-                CoursList a = new CoursList(theme, id);
-                 a.getF().show();
-                 
+                 logfb lolo = new logfb();
+                 lolo.show();
             }
         });
 
